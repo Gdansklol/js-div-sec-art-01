@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Add position relative for absolute positioning */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    color: whitesmoke;
+    display: flex; /* Display the list items in a row */
+}
+
+nav li {
+    margin-right: 15px;
+    color: whitesmoke;
+}
+
+a {
+    color: #fff;
+    text-decoration: none; /* Remove default underline from links */
+}
+
+.hamburger {
+    display: none; /* Hide the hamburger icon by default */
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the nav links by default in mobile view */
+        flex-direction: column; /* Display the links in a column */
+        position: absolute;
+        top: 60px; /* Adjust the top position as needed */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block; /* Display the hamburger icon in mobile view */
+    }
+
+    .nav-links.show {
+        display: flex; /* Show the nav links when the 'show' class is present */
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    color: whitesmoke;
+
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+    color: whitesmoke;
+}
+ a {
+    color: #fff;
+ }
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+} */
